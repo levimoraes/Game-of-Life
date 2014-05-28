@@ -31,6 +31,7 @@
 		87D2EB1419366FDA00368991 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB1619366FDA00368991 /* HomeViewController.xib */; };
 		87D2EB18193672C700368991 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB17193672C700368991 /* fundo.png */; };
 		87D2EB1A193673B300368991 /* foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB19193673B300368991 /* foto.png */; };
+		87D2EB1C19367A9300368991 /* botão começar.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB1B19367A9300368991 /* botão começar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		87D2EB1519366FDA00368991 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeViewController.xib; sourceTree = "<group>"; };
 		87D2EB17193672C700368991 /* fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fundo.png; path = Imagens/fundo.png; sourceTree = SOURCE_ROOT; };
 		87D2EB19193673B300368991 /* foto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foto.png; path = Imagens/foto.png; sourceTree = SOURCE_ROOT; };
+		87D2EB1B19367A9300368991 /* botão começar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão começar.png"; path = "Imagens/botão começar.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		6DE825681936636A000EDC72 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				87D2EB1B19367A9300368991 /* botão começar.png */,
 				87D2EB19193673B300368991 /* foto.png */,
 				87D2EB17193672C700368991 /* fundo.png */,
 				6DE8257519366B58000EDC72 /* bk.png */,
@@ -272,6 +275,7 @@
 				6DE825721936679A000EDC72 /* botão 1 atividades.png in Resources */,
 				87D2EB18193672C700368991 /* fundo.png in Resources */,
 				6DE825671936631C000EDC72 /* ViewController.xib in Resources */,
+				87D2EB1C19367A9300368991 /* botão começar.png in Resources */,
 				6DE8254719366304000EDC72 /* Images.xcassets in Resources */,
 				6DE825731936679A000EDC72 /* botão 1 perfil.png in Resources */,
 				6DE8257819366B58000EDC72 /* bk.png in Resources */,
