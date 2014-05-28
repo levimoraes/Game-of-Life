@@ -21,9 +21,9 @@
 		6DE8255A19366304000EDC72 /* Game_of_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8255919366304000EDC72 /* Game_of_LifeTests.m */; };
 		6DE825661936631C000EDC72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE825641936631C000EDC72 /* ViewController.m */; };
 		6DE825671936631C000EDC72 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE825651936631C000EDC72 /* ViewController.xib */; };
-		6DE8256C1936638E000EDC72 /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE825691936638E000EDC72 /* botão 1 atividades.png */; };
-		6DE8256D1936638E000EDC72 /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8256A1936638E000EDC72 /* botão 1 perfil.png */; };
-		6DE8256E1936638E000EDC72 /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8256B1936638E000EDC72 /* botão 1 recompensas.png */; };
+		6DE825721936679A000EDC72 /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8256F1936679A000EDC72 /* botão 1 atividades.png */; };
+		6DE825731936679A000EDC72 /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE825701936679A000EDC72 /* botão 1 perfil.png */; };
+		6DE825741936679A000EDC72 /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE825711936679A000EDC72 /* botão 1 recompensas.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +56,9 @@
 		6DE825631936631C000EDC72 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6DE825641936631C000EDC72 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DE825651936631C000EDC72 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		6DE825691936638E000EDC72 /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 atividades.png"; path = "../../../Downloads/Imagens/botão 1 atividades.png"; sourceTree = "<group>"; };
-		6DE8256A1936638E000EDC72 /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 perfil.png"; path = "../../../Downloads/Imagens/botão 1 perfil.png"; sourceTree = "<group>"; };
-		6DE8256B1936638E000EDC72 /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 recompensas.png"; path = "../../../Downloads/Imagens/botão 1 recompensas.png"; sourceTree = "<group>"; };
+		6DE8256F1936679A000EDC72 /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 atividades.png"; path = "Imagens/botão 1 atividades.png"; sourceTree = SOURCE_ROOT; };
+		6DE825701936679A000EDC72 /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 perfil.png"; path = "Imagens/botão 1 perfil.png"; sourceTree = SOURCE_ROOT; };
+		6DE825711936679A000EDC72 /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 recompensas.png"; path = "Imagens/botão 1 recompensas.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,9 +162,9 @@
 		6DE825681936636A000EDC72 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				6DE825691936638E000EDC72 /* botão 1 atividades.png */,
-				6DE8256A1936638E000EDC72 /* botão 1 perfil.png */,
-				6DE8256B1936638E000EDC72 /* botão 1 recompensas.png */,
+				6DE8256F1936679A000EDC72 /* botão 1 atividades.png */,
+				6DE825701936679A000EDC72 /* botão 1 perfil.png */,
+				6DE825711936679A000EDC72 /* botão 1 recompensas.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -244,12 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE8256E1936638E000EDC72 /* botão 1 recompensas.png in Resources */,
+				6DE825741936679A000EDC72 /* botão 1 recompensas.png in Resources */,
 				6DE8253F19366304000EDC72 /* InfoPlist.strings in Resources */,
-				6DE8256C1936638E000EDC72 /* botão 1 atividades.png in Resources */,
+				6DE825721936679A000EDC72 /* botão 1 atividades.png in Resources */,
 				6DE825671936631C000EDC72 /* ViewController.xib in Resources */,
 				6DE8254719366304000EDC72 /* Images.xcassets in Resources */,
-				6DE8256D1936638E000EDC72 /* botão 1 perfil.png in Resources */,
+				6DE825731936679A000EDC72 /* botão 1 perfil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +469,7 @@
 				6DE8255F19366304000EDC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DE8256019366304000EDC72 /* Build configuration list for PBXNativeTarget "Game_of_LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +478,7 @@
 				6DE8256219366304000EDC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
