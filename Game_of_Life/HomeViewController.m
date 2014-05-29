@@ -23,6 +23,10 @@
     return self;
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.nickUsuario resignFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
