@@ -6,11 +6,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="comecarButton" destination="hp0-T9-8hC" id="xhB-Ec-4DU"/>
+                <outlet property="fotoImage" destination="8V7-i8-wSG" id="ow8-Ih-BUA"/>
+                <outlet property="nomeUsuarioButton" destination="0Cr-Y4-rM0" id="xe3-uc-egi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="zFK-Gb-wrn"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -19,26 +22,32 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USUARIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cr-Y4-rM0">
-                    <rect key="frame" x="66" y="259" width="191" height="30"/>
+                    <rect key="frame" x="66" y="366" width="191" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="foto.png" translatesAutoresizingMaskIntoConstraints="NO" id="8V7-i8-wSG">
-                    <rect key="frame" x="40" y="50" width="240" height="173"/>
+                    <rect key="frame" x="41" y="85" width="240" height="173"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-T9-8hC">
-                    <rect key="frame" x="88" y="354" width="147" height="65"/>
+                    <rect key="frame" x="88" y="448" width="147" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="botão começar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="enviar:" destination="-1" eventType="touchUpInside" id="aPM-fV-f5l"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="releaseKeyboard:" destination="-1" eventType="touchUpInside" id="yFv-PJ-Fwi"/>
+            </connections>
         </view>
     </objects>
     <resources>

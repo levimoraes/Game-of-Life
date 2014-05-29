@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "ViewController.h"
 
 @interface HomeViewController ()
 
@@ -21,6 +22,19 @@
         // Custom initialization
     }
     return self;
+}
+
+-(IBAction)enviar:(id)sender{
+    ViewController *p = [[ViewController alloc]init];
+    [self presentViewController:p
+                       animated:YES
+                     completion:nil];
+}
+
+-(IBAction)releaseKeyboard:(id)sender{
+    [_nomeUsuarioButton resignFirstResponder];
+    [_comecarButton resignFirstResponder];
+    [_fotoImage resignFirstResponder];
 }
 
 - (void)viewDidLoad

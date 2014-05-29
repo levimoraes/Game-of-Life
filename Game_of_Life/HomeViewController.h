@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *comecarButton;
+@property (weak, nonatomic) IBOutlet UITextField *nomeUsuarioButton;
+@property (weak, nonatomic) IBOutlet UIImageView *fotoImage;
 
 @end
