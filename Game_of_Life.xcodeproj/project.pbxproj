@@ -27,6 +27,7 @@
 		6DE8257819366B58000EDC72 /* bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8257519366B58000EDC72 /* bk.png */; };
 		6DE8257919366B58000EDC72 /* Bot∆o 1 ver conquistas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8257619366B58000EDC72 /* Bot∆o 1 ver conquistas.png */; };
 		6DE8257A19366B58000EDC72 /* sem-foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8257719366B58000EDC72 /* sem-foto.jpg */; };
+		878D07E71937B52600D40F7E /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 878D07E61937B52600D40F7E /* Pessoa.m */; };
 		87D2EB1219366F6100368991 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D2EB1019366F6100368991 /* HomeViewController.m */; };
 		87D2EB1419366FDA00368991 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB1619366FDA00368991 /* HomeViewController.xib */; };
 		87D2EB18193672C700368991 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D2EB17193672C700368991 /* fundo.png */; };
@@ -70,6 +71,8 @@
 		6DE8257519366B58000EDC72 /* bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bk.png; path = Imagens/bk.png; sourceTree = SOURCE_ROOT; };
 		6DE8257619366B58000EDC72 /* Bot∆o 1 ver conquistas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bot∆o 1 ver conquistas.png"; path = "Imagens/Bot∆o 1 ver conquistas.png"; sourceTree = SOURCE_ROOT; };
 		6DE8257719366B58000EDC72 /* sem-foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "sem-foto.jpg"; path = "Imagens/sem-foto.jpg"; sourceTree = SOURCE_ROOT; };
+		878D07E51937B52600D40F7E /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		878D07E61937B52600D40F7E /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
 		87D2EB0F19366F6100368991 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		87D2EB1019366F6100368991 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		87D2EB1519366FDA00368991 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeViewController.xib; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 		6DE8253A19366304000EDC72 /* Game_of_Life */ = {
 			isa = PBXGroup;
 			children = (
+				878D07E51937B52600D40F7E /* Pessoa.h */,
+				878D07E61937B52600D40F7E /* Pessoa.m */,
 				6DE8254319366304000EDC72 /* AppDelegate.h */,
 				6DE8254419366304000EDC72 /* AppDelegate.m */,
 				6DE8254619366304000EDC72 /* Images.xcassets */,
@@ -304,6 +309,7 @@
 				6DE825661936631C000EDC72 /* ViewController.m in Sources */,
 				6DE8254519366304000EDC72 /* AppDelegate.m in Sources */,
 				6DE8254119366304000EDC72 /* main.m in Sources */,
+				878D07E71937B52600D40F7E /* Pessoa.m in Sources */,
 				87D2EB1219366F6100368991 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
