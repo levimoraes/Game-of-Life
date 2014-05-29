@@ -18,26 +18,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bk.png" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-WG-Sae">
-                    <rect key="frame" x="0.0" y="27" width="320" height="568"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-WG-Sae">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-3m-kzK">
-                    <rect key="frame" x="0.0" y="27" width="107" height="105"/>
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="105"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="botão 1 perfil.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK6-dd-Nhg">
-                    <rect key="frame" x="108" y="27" width="106" height="105"/>
+                    <rect key="frame" x="108" y="0.0" width="106" height="105"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="botão 1 atividades.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-tZ-uSF">
-                    <rect key="frame" x="214" y="27" width="106" height="105"/>
+                    <rect key="frame" x="214" y="-1" width="106" height="105"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="botão 1 recompensas.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,7 +46,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UC-zE-T4j">
                     <rect key="frame" x="41" y="517" width="234" height="51"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button" image="Bot∆o 1 ver conquistas.png">
+                    <state key="normal" title="Button" image="Botão 1 ver conquistas.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
@@ -57,10 +57,10 @@
         </view>
     </objects>
     <resources>
-        <image name="Bot∆o 1 ver conquistas.png" width="468" height="106"/>
-        <image name="bk.png" width="640" height="1136"/>
+        <image name="Botão 1 ver conquistas.png" width="468" height="106"/>
         <image name="botão 1 atividades.png" width="400" height="400"/>
         <image name="botão 1 perfil.png" width="400" height="400"/>
         <image name="botão 1 recompensas.png" width="400" height="400"/>
+        <image name="fundo.png" width="640" height="1136"/>
     </resources>
 </document>
