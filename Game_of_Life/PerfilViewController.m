@@ -46,6 +46,29 @@
                        animated:YES
                      completion:nil];
 }
+-(NSString*)saveFilePath
+{
+    NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
+}
+
+
+-(IBAction)saveData:(id)sender
+{
+    NSMutableArray *data = [[NSMutableArray alloc] init];
+    NSDate* todayData = [[NSDate alloc] init];
+    [data addObject: _nome.text];
+    [data addObject: _xp.text];
+    [data addObject:_dinheiro.text];
+    [data addObject:_level.text];
+    
+    [data writeToFile:[self saveFilePath] atomically:YES];
+    
+}
+
+
+
+
 
 - (void)viewDidLoad
 {

@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *dinheiro;
 @property (weak, nonatomic) IBOutlet UILabel *xp;
 @property (weak, nonatomic) IBOutlet UILabel *level;
+@property (weak, nonatomic) IBOutlet UIButton *sendButton;
 
 @end

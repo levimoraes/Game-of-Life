@@ -9,6 +9,7 @@
                 <outlet property="dinheiro" destination="TB2-IR-xl5" id="4Hh-L5-reO"/>
                 <outlet property="level" destination="KZ7-MR-Itd" id="EKI-SP-TmA"/>
                 <outlet property="nome" destination="FDa-gr-Cw3" id="6oX-qV-vYZ"/>
+                <outlet property="sendButton" destination="1TR-rP-2hL" id="sBn-92-8a7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="xp" destination="5kt-zp-xVq" id="C4W-Kh-fG5"/>
             </connections>
@@ -108,6 +109,16 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TR-rP-2hL">
+                    <rect key="frame" x="205" y="365" width="43" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Enviar">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveData:" destination="-1" eventType="touchUpInside" id="h18-Se-0tV"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
