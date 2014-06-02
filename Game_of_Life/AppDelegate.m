@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "HomeViewController.h"
+#import "PerfilViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    HomeViewController *view = [[HomeViewController alloc]init];
+    PerfilViewController *view = [[PerfilViewController alloc]init];
     self.window.rootViewController = view;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
