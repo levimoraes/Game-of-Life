@@ -28,7 +28,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
     _fotoPerfil.image = img;
     
-    [[picker parentViewController] dismissViewControllerAnimated:YES completion:nil];
+    [[picker presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     
 }
 
