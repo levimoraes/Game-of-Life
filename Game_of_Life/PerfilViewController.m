@@ -10,6 +10,7 @@
 #import "AtividadesViewController.h"
 #import "RecompensasViewController.h"
 
+
 @interface PerfilViewController ()
 
 @end
@@ -24,6 +25,13 @@
     }
     return self;
 }
+
+//-(IBAction)muda:(id)sender{
+//    _nome.text = @"Levi Moraes";
+//    _dinheiro.text = @"25000";
+//    _xp.text = @"150";
+//    _level.text = @"2";
+//}
 
 -(IBAction)abaAtividades:(id)sender{
     AtividadesViewController *p = [[AtividadesViewController alloc]init];
@@ -43,6 +51,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _nome.text = @"Levi Moraes";
+    _dinheiro.text = @"25000";
+    _xp.text = @"150";
+    _level.text = @"2";
+
 }
 
 - (void)didReceiveMemoryWarning

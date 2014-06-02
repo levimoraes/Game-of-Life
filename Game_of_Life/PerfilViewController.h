@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PerfilViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *nome;
+@property (weak, nonatomic) IBOutlet UILabel *dinheiro;
+@property (weak, nonatomic) IBOutlet UILabel *xp;
+@property (weak, nonatomic) IBOutlet UILabel *level;
 
 @end
