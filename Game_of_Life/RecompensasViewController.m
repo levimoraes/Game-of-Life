@@ -7,6 +7,8 @@
 //
 
 #import "RecompensasViewController.h"
+#import "PerfilViewController.h"
+#import "AtividadesViewController.h"
 
 @interface RecompensasViewController ()
 
@@ -21,6 +23,20 @@
         // Custom initialization
     }
     return self;
+}
+
+-(IBAction)abaPerfil:(id)sender{
+    PerfilViewController *p = [[PerfilViewController alloc]init];
+    [self presentViewController:p
+                       animated:YES
+                     completion:nil];
+}
+
+-(IBAction)abaAtividades:(id)sender{
+    AtividadesViewController*p = [[AtividadesViewController alloc]init];
+    [self presentViewController:p
+                       animated:YES
+                     completion:nil];
 }
 
 - (void)viewDidLoad
