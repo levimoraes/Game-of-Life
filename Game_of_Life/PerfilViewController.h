@@ -10,4 +10,12 @@
 
 @interface PerfilViewController : UIViewController
 
+<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *fotoPerfil;
+@property (weak, nonatomic) IBOutlet UIButton *botaoSalvarFoto;
+@property (nonatomic) UIImagePickerController *pegarFoto;
+
+- (IBAction)salvarFoto:(UIButton *)sender;
+
 @end
