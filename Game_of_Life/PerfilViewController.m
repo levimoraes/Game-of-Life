@@ -25,13 +25,19 @@
     }
     return self;
 }
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
+    _fotoPerfil.image = img;
+    
+    [[picker parentViewController] dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
-//-(IBAction)muda:(id)sender{
-//    _nome.text = @"Levi Moraes";
-//    _dinheiro.text = @"25000";
-//    _xp.text = @"150";
-//    _level.text = @"2";
-//}
+- (IBAction)salvarFoto:(UIButton *)sender {
+    [self presentViewController:_pegarFoto animated:YES completion:nil];
+    
+}
+
+
 
 -(IBAction)abaAtividades:(id)sender{
     AtividadesViewController *p = [[AtividadesViewController alloc]init];
@@ -74,6 +80,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _pegarFoto = [[UIImagePickerController alloc]init];
+    
+    _pegarFoto.delegate = self;
+    
+    _pegarFoto.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
+    
     
     _nome.text = @"Levi Moraes";
     _dinheiro.text = @"25000";

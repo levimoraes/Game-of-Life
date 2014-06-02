@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PerfilViewController : UIViewController
+@interface PerfilViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *dinheiro;
 @property (weak, nonatomic) IBOutlet UILabel *xp;
 @property (weak, nonatomic) IBOutlet UILabel *level;
 @property (weak, nonatomic) IBOutlet UIButton *sendButton;
+
+@property (weak, nonatomic) IBOutlet UIImageView *fotoPerfil;
+
+@property (weak, nonatomic) IBOutlet UIButton *botaoSalvarFoto;
+
+@property (nonatomic) UIImagePickerController *pegarFoto;
 
 @end
