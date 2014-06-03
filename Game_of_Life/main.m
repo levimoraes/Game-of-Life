@@ -15,14 +15,14 @@ int main(int argc, char * argv[])
 {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    
-    
-        Perfil *pessoa1 = [[Perfil alloc]init];
-        pessoa1.nome = @"Levi Moraes";
-        pessoa1.dinheiro = 2500;
-        pessoa1.xp = 100;
-        pessoa1.level = 9;
+
         
+        
+        Perfil *pessoa1 = [[Perfil alloc]init];
+        pessoa1.nome = @"";
+        pessoa1.dinheiro = 0;
+        pessoa1.xp = 0;
+        pessoa1.level = 1;
         
     }
     

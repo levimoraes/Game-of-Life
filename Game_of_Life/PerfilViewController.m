@@ -62,7 +62,7 @@
 -(IBAction)saveData:(id)sender
 {
     NSMutableArray *data = [[NSMutableArray alloc] init];
-    NSDate* todayData = [[NSDate alloc] init];
+    __unused NSDate* todayData = [[NSDate alloc] init];
     [data addObject: _nome.text];
     [data addObject: _xp.text];
     [data addObject:_dinheiro.text];
@@ -72,25 +72,51 @@
     
 }
 
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == 12) {
+        if (buttonIndex == 1) {
+            UITextField *textfield = [alertView textFieldAtIndex:0];
+            NSLog(@"username: %@", textfield.text);
+            _nome.text = textfield.text;
+        }
+    }
+}
 
-
-
+-(IBAction)changeNick
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mude seu Nick" message:@"" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
+    
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    alert.tag = 12;
+    
+    [alert addButtonWithTitle:@"Aceitar"];
+    [alert show];
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    //Foto
     _pegarFoto = [[UIImagePickerController alloc]init];
-    
     _pegarFoto.delegate = self;
-    
     _pegarFoto.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     
+    //Nick
+    if([_nome.text isEqualToString:@""]){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Escolha seu Nick" message:@"" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
     
-    _nome.text = @"Levi Moraes";
-    _dinheiro.text = @"25000";
-    _xp.text = @"150";
-    _level.text = @"2";
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        alert.tag = 12;
+    
+        [alert addButtonWithTitle:@"Aceitar"];
+        [alert show];
+    }else{
+        
+    }
 
 }
 
