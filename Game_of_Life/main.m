@@ -16,8 +16,6 @@ int main(int argc, char * argv[])
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 
-        
-        
         Perfil *pessoa1 = [[Perfil alloc]init];
         pessoa1.nome = @"";
         pessoa1.dinheiro = 0;

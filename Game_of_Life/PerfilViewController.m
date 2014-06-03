@@ -55,6 +55,7 @@
 -(NSString*)saveFilePath
 {
     NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSLog(@"%@",path);
     return [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
 }
 
@@ -62,13 +63,14 @@
 -(IBAction)saveData:(id)sender
 {
     NSMutableArray *data = [[NSMutableArray alloc] init];
-    __unused NSDate* todayData = [[NSDate alloc] init];
+    //__unused NSDate* todayData = [[NSDate alloc] init];
     [data addObject: _nome.text];
     [data addObject: _xp.text];
     [data addObject:_dinheiro.text];
     [data addObject:_level.text];
     
     [data writeToFile:[self saveFilePath] atomically:YES];
+    NSLog(@"Salvo no plist\n%@",data);
     
 }
 
@@ -100,13 +102,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //Foto
     _pegarFoto = [[UIImagePickerController alloc]init];
     _pegarFoto.delegate = self;
     _pegarFoto.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     
-    //Nick
-    if([_nome.text isEqualToString:@""]){
+    
+    
+    
+    //
+    NSString *historico = [[NSBundle mainBundle] pathForResource:@"historico" ofType:@"plist"];
+    NSMutableArray *verificarDados = [[NSMutableArray alloc] initWithContentsOfFile: historico];
+    NSLog(@"Plist = %@",verificarDados);
+    //
+    
+    if(verificarDados == nil){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Escolha seu Nick" message:@"" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
     
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
@@ -114,8 +123,16 @@
     
         [alert addButtonWithTitle:@"Aceitar"];
         [alert show];
+        
+        _dinheiro.text = @"0";
+        _xp.text = @"0";
+        _level.text = @"1";
     }else{
         
+        /*for(NSString *str in verificarDados){
+            _nome.text = str;
+        }*/
+
     }
 
 }
