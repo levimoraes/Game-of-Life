@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3461DD25193E3C8D009342FB /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD22193E3C8D009342FB /* botão 1 atividades.png */; };
+		3461DD26193E3C8D009342FB /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD23193E3C8D009342FB /* botão 1 perfil.png */; };
+		3461DD27193E3C8D009342FB /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD24193E3C8D009342FB /* botão 1 recompensas.png */; };
 		6DB5B21C193CE78F0028AE8B /* PerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */; };
 		6DB5B21D193CE78F0028AE8B /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */; };
+		6DB5B221193CECB30028AE8B /* AtividadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */; };
+		6DB5B222193CECB30028AE8B /* AtividadesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB5B220193CECB30028AE8B /* AtividadesViewController.xib */; };
+		6DB5B226193CEDEA0028AE8B /* RecompensasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B224193CEDEA0028AE8B /* RecompensasViewController.m */; };
+		6DB5B227193CEDEA0028AE8B /* RecompensasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB5B225193CEDEA0028AE8B /* RecompensasViewController.xib */; };
+		6DB5B22A193CF6FD0028AE8B /* Perfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B229193CF6FD0028AE8B /* Perfil.m */; };
 		6DE8253519366304000EDC72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE8253419366304000EDC72 /* Foundation.framework */; };
 		6DE8253719366304000EDC72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE8253619366304000EDC72 /* CoreGraphics.framework */; };
 		6DE8253919366304000EDC72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE8253819366304000EDC72 /* UIKit.framework */; };
@@ -21,9 +29,6 @@
 		6DE8255019366304000EDC72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE8253819366304000EDC72 /* UIKit.framework */; };
 		6DE8255819366304000EDC72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8255619366304000EDC72 /* InfoPlist.strings */; };
 		6DE8255A19366304000EDC72 /* Game_of_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8255919366304000EDC72 /* Game_of_LifeTests.m */; };
-		878D08F01937D48100D40F7E /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08E81937D48100D40F7E /* botão 1 atividades.png */; };
-		878D08F11937D48100D40F7E /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08E91937D48100D40F7E /* botão 1 perfil.png */; };
-		878D08F21937D48100D40F7E /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08EA1937D48100D40F7E /* botão 1 recompensas.png */; };
 		878D08F31937D48100D40F7E /* Botão 1 ver conquistas.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08EB1937D48100D40F7E /* Botão 1 ver conquistas.png */; };
 		878D08F41937D48100D40F7E /* botão começar.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08EC1937D48100D40F7E /* botão começar.png */; };
 		878D08F51937D48100D40F7E /* foto.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D08ED1937D48100D40F7E /* foto.png */; };
@@ -42,9 +47,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3461DD22193E3C8D009342FB /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 atividades.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 atividades.png"; sourceTree = "<group>"; };
+		3461DD23193E3C8D009342FB /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 perfil.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 perfil.png"; sourceTree = "<group>"; };
+		3461DD24193E3C8D009342FB /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 recompensas.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 recompensas.png"; sourceTree = "<group>"; };
 		6DB5B219193CE78F0028AE8B /* PerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilViewController.h; sourceTree = "<group>"; };
 		6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilViewController.m; sourceTree = "<group>"; };
 		6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
+		6DB5B21E193CECB30028AE8B /* AtividadesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtividadesViewController.h; sourceTree = "<group>"; };
+		6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtividadesViewController.m; sourceTree = "<group>"; };
+		6DB5B220193CECB30028AE8B /* AtividadesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtividadesViewController.xib; sourceTree = "<group>"; };
+		6DB5B223193CEDEA0028AE8B /* RecompensasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecompensasViewController.h; sourceTree = "<group>"; };
+		6DB5B224193CEDEA0028AE8B /* RecompensasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecompensasViewController.m; sourceTree = "<group>"; };
+		6DB5B225193CEDEA0028AE8B /* RecompensasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecompensasViewController.xib; sourceTree = "<group>"; };
+		6DB5B228193CF6FD0028AE8B /* Perfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perfil.h; sourceTree = "<group>"; };
+		6DB5B229193CF6FD0028AE8B /* Perfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perfil.m; sourceTree = "<group>"; };
 		6DE8253119366304000EDC72 /* Game_of_Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game_of_Life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE8253419366304000EDC72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DE8253619366304000EDC72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +77,6 @@
 		6DE8255519366304000EDC72 /* Game_of_LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Game_of_LifeTests-Info.plist"; sourceTree = "<group>"; };
 		6DE8255719366304000EDC72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DE8255919366304000EDC72 /* Game_of_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game_of_LifeTests.m; sourceTree = "<group>"; };
-		878D08E81937D48100D40F7E /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 atividades.png"; sourceTree = "<group>"; };
-		878D08E91937D48100D40F7E /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 perfil.png"; sourceTree = "<group>"; };
-		878D08EA1937D48100D40F7E /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 recompensas.png"; sourceTree = "<group>"; };
 		878D08EB1937D48100D40F7E /* Botão 1 ver conquistas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Botão 1 ver conquistas.png"; sourceTree = "<group>"; };
 		878D08EC1937D48100D40F7E /* botão começar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão começar.png"; sourceTree = "<group>"; };
 		878D08ED1937D48100D40F7E /* foto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto.png; sourceTree = "<group>"; };
@@ -133,9 +146,6 @@
 				6DE8254619366304000EDC72 /* Images.xcassets */,
 				878D08E71937D48100D40F7E /* Imagens */,
 				6DE8253B19366304000EDC72 /* Supporting Files */,
-				6DB5B219193CE78F0028AE8B /* PerfilViewController.h */,
-				6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */,
-				6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */,
 			);
 			path = Game_of_Life;
 			sourceTree = "<group>";
@@ -143,10 +153,21 @@
 		6DE8253B19366304000EDC72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6DB5B219193CE78F0028AE8B /* PerfilViewController.h */,
+				6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */,
+				6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */,
 				6DE8253C19366304000EDC72 /* Game_of_Life-Info.plist */,
 				6DE8253D19366304000EDC72 /* InfoPlist.strings */,
 				6DE8254019366304000EDC72 /* main.m */,
 				6DE8254219366304000EDC72 /* Game_of_Life-Prefix.pch */,
+				6DB5B21E193CECB30028AE8B /* AtividadesViewController.h */,
+				6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */,
+				6DB5B220193CECB30028AE8B /* AtividadesViewController.xib */,
+				6DB5B223193CEDEA0028AE8B /* RecompensasViewController.h */,
+				6DB5B224193CEDEA0028AE8B /* RecompensasViewController.m */,
+				6DB5B225193CEDEA0028AE8B /* RecompensasViewController.xib */,
+				6DB5B228193CF6FD0028AE8B /* Perfil.h */,
+				6DB5B229193CF6FD0028AE8B /* Perfil.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,9 +193,9 @@
 		878D08E71937D48100D40F7E /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				878D08E81937D48100D40F7E /* botão 1 atividades.png */,
-				878D08E91937D48100D40F7E /* botão 1 perfil.png */,
-				878D08EA1937D48100D40F7E /* botão 1 recompensas.png */,
+				3461DD22193E3C8D009342FB /* botão 1 atividades.png */,
+				3461DD23193E3C8D009342FB /* botão 1 perfil.png */,
+				3461DD24193E3C8D009342FB /* botão 1 recompensas.png */,
 				878D08EB1937D48100D40F7E /* Botão 1 ver conquistas.png */,
 				878D08EC1937D48100D40F7E /* botão começar.png */,
 				878D08ED1937D48100D40F7E /* foto.png */,
@@ -259,17 +280,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB5B227193CEDEA0028AE8B /* RecompensasViewController.xib in Resources */,
 				6DE8253F19366304000EDC72 /* InfoPlist.strings in Resources */,
 				878D08F41937D48100D40F7E /* botão começar.png in Resources */,
 				878D08F71937D48100D40F7E /* titulo conquistas.png in Resources */,
+				3461DD27193E3C8D009342FB /* botão 1 recompensas.png in Resources */,
 				878D08F51937D48100D40F7E /* foto.png in Resources */,
-				878D08F01937D48100D40F7E /* botão 1 atividades.png in Resources */,
 				6DB5B21D193CE78F0028AE8B /* PerfilViewController.xib in Resources */,
+				6DB5B222193CECB30028AE8B /* AtividadesViewController.xib in Resources */,
 				878D08F61937D48100D40F7E /* fundo.png in Resources */,
-				878D08F21937D48100D40F7E /* botão 1 recompensas.png in Resources */,
+				3461DD26193E3C8D009342FB /* botão 1 perfil.png in Resources */,
 				878D08F31937D48100D40F7E /* Botão 1 ver conquistas.png in Resources */,
+				3461DD25193E3C8D009342FB /* botão 1 atividades.png in Resources */,
 				6DE8254719366304000EDC72 /* Images.xcassets in Resources */,
-				878D08F11937D48100D40F7E /* botão 1 perfil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB5B226193CEDEA0028AE8B /* RecompensasViewController.m in Sources */,
 				6DB5B21C193CE78F0028AE8B /* PerfilViewController.m in Sources */,
 				6DE8254519366304000EDC72 /* AppDelegate.m in Sources */,
+				6DB5B221193CECB30028AE8B /* AtividadesViewController.m in Sources */,
 				6DE8254119366304000EDC72 /* main.m in Sources */,
+				6DB5B22A193CF6FD0028AE8B /* Perfil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
