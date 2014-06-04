@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3461DD25193E3C8D009342FB /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD22193E3C8D009342FB /* botão 1 atividades.png */; };
-		3461DD26193E3C8D009342FB /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD23193E3C8D009342FB /* botão 1 perfil.png */; };
-		3461DD27193E3C8D009342FB /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 3461DD24193E3C8D009342FB /* botão 1 recompensas.png */; };
+		6DAD1001193F8C5C00828CF3 /* botão 1 atividades.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAD0FFE193F8C5C00828CF3 /* botão 1 atividades.png */; };
+		6DAD1002193F8C5C00828CF3 /* botão 1 perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAD0FFF193F8C5C00828CF3 /* botão 1 perfil.png */; };
+		6DAD1003193F8C5C00828CF3 /* botão 1 recompensas.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DAD1000193F8C5C00828CF3 /* botão 1 recompensas.png */; };
 		6DB5B21C193CE78F0028AE8B /* PerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */; };
 		6DB5B21D193CE78F0028AE8B /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */; };
 		6DB5B221193CECB30028AE8B /* AtividadesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */; };
@@ -47,9 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3461DD22193E3C8D009342FB /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 atividades.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 atividades.png"; sourceTree = "<group>"; };
-		3461DD23193E3C8D009342FB /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 perfil.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 perfil.png"; sourceTree = "<group>"; };
-		3461DD24193E3C8D009342FB /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "botão 1 recompensas.png"; path = "../../../../../Volumes/Eduardo/BEPiD/1º Mini Challenge/Meus arquivos/2º Tela - Perfil/botão 1 recompensas.png"; sourceTree = "<group>"; };
+		6DAD0FFE193F8C5C00828CF3 /* botão 1 atividades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 atividades.png"; sourceTree = "<group>"; };
+		6DAD0FFF193F8C5C00828CF3 /* botão 1 perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 perfil.png"; sourceTree = "<group>"; };
+		6DAD1000193F8C5C00828CF3 /* botão 1 recompensas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botão 1 recompensas.png"; sourceTree = "<group>"; };
 		6DB5B219193CE78F0028AE8B /* PerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilViewController.h; sourceTree = "<group>"; };
 		6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilViewController.m; sourceTree = "<group>"; };
 		6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
@@ -193,9 +193,9 @@
 		878D08E71937D48100D40F7E /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				3461DD22193E3C8D009342FB /* botão 1 atividades.png */,
-				3461DD23193E3C8D009342FB /* botão 1 perfil.png */,
-				3461DD24193E3C8D009342FB /* botão 1 recompensas.png */,
+				6DAD0FFE193F8C5C00828CF3 /* botão 1 atividades.png */,
+				6DAD0FFF193F8C5C00828CF3 /* botão 1 perfil.png */,
+				6DAD1000193F8C5C00828CF3 /* botão 1 recompensas.png */,
 				878D08EB1937D48100D40F7E /* Botão 1 ver conquistas.png */,
 				878D08EC1937D48100D40F7E /* botão começar.png */,
 				878D08ED1937D48100D40F7E /* foto.png */,
@@ -284,14 +284,14 @@
 				6DE8253F19366304000EDC72 /* InfoPlist.strings in Resources */,
 				878D08F41937D48100D40F7E /* botão começar.png in Resources */,
 				878D08F71937D48100D40F7E /* titulo conquistas.png in Resources */,
-				3461DD27193E3C8D009342FB /* botão 1 recompensas.png in Resources */,
+				6DAD1003193F8C5C00828CF3 /* botão 1 recompensas.png in Resources */,
 				878D08F51937D48100D40F7E /* foto.png in Resources */,
 				6DB5B21D193CE78F0028AE8B /* PerfilViewController.xib in Resources */,
 				6DB5B222193CECB30028AE8B /* AtividadesViewController.xib in Resources */,
 				878D08F61937D48100D40F7E /* fundo.png in Resources */,
-				3461DD26193E3C8D009342FB /* botão 1 perfil.png in Resources */,
+				6DAD1002193F8C5C00828CF3 /* botão 1 perfil.png in Resources */,
 				878D08F31937D48100D40F7E /* Botão 1 ver conquistas.png in Resources */,
-				3461DD25193E3C8D009342FB /* botão 1 atividades.png in Resources */,
+				6DAD1001193F8C5C00828CF3 /* botão 1 atividades.png in Resources */,
 				6DE8254719366304000EDC72 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

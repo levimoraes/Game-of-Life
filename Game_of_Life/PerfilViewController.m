@@ -62,7 +62,7 @@
 -(IBAction)saveData:(id)sender
 {
     NSMutableArray *data = [[NSMutableArray alloc] init];
-    NSDate* todayData = [[NSDate alloc] init];
+    //NSDate* todayData = [[NSDate alloc] init];
     [data addObject: _nome.text];
     [data addObject: _xp.text];
     [data addObject:_dinheiro.text];
