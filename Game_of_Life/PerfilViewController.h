@@ -18,4 +18,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *botaoSalvarFoto;
 @property (weak, nonatomic) IBOutlet UIButton *mudarNick;
 @property (nonatomic) UIImagePickerController *pegarFoto;
+
+
+//@property (nonatomic) IBOutlet int dinheiro;
+
+
 @end

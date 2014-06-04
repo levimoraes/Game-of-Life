@@ -9,6 +9,7 @@
 #import "PerfilViewController.h"
 #import "AtividadesViewController.h"
 #import "RecompensasViewController.h"
+#import "Perfil.h"
 
 
 @interface PerfilViewController ()
@@ -44,7 +45,8 @@
     [self presentViewController:p
                        animated:YES
                      completion:nil];
-}
+    
+    }
 
 -(IBAction)abaRecompensas:(id)sender{
     RecompensasViewController *p = [[RecompensasViewController alloc]init];
@@ -127,15 +129,25 @@
         [alert addButtonWithTitle:@"Aceitar"];
         [alert show];
         
-        _dinheiro.text = @"0";
-        _xp.text = @"0";
-        _level.text = @"1";
+        Perfil *pessoa1 = [[Perfil alloc]init];
+        pessoa1.nome = @"";
+        pessoa1.dinheiro = 50;
+        NSString *stringDinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+        pessoa1.xp = 10;
+        //NSString *stringXP = [NSString stringWithFormat:@"%d",pessoa1.xp];
+        pessoa1.level = 1;
+        NSString *stringlevel = [NSString stringWithFormat:@"%d",pessoa1.level];
+        
+        
+        pessoa1.xp+=30;
+        NSString *stringXP = [NSString stringWithFormat:@"%d",pessoa1.xp];
+        
+        _dinheiro.text = stringDinheiro;
+        _xp.text = stringXP ;
+        _level.text = stringlevel;
     }else{
         
-        /*for(NSString *str in verificarDados){
-            _nome.text = str;
-        }*/
-
+    
     }
 
 }

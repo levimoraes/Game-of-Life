@@ -21,7 +21,8 @@ int main(int argc, char * argv[])
         pessoa1.dinheiro = 0;
         pessoa1.xp = 0;
         pessoa1.level = 1;
-        
+        NSLog(@"%@",pessoa1);
     }
+    
     
 }
