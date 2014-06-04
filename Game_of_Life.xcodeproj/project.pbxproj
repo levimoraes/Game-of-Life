@@ -108,6 +108,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DAD1004193FA08D00828CF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DB5B219193CE78F0028AE8B /* PerfilViewController.h */,
+				6DB5B21E193CECB30028AE8B /* AtividadesViewController.h */,
+				6DB5B223193CEDEA0028AE8B /* RecompensasViewController.h */,
+				6DB5B228193CF6FD0028AE8B /* Perfil.h */,
+				6DB5B229193CF6FD0028AE8B /* Perfil.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6DAD1005193FA0A100828CF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DB5B225193CEDEA0028AE8B /* RecompensasViewController.xib */,
+				6DB5B220193CECB30028AE8B /* AtividadesViewController.xib */,
+				6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6DAD1006193FA0BC00828CF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6DB5B224193CEDEA0028AE8B /* RecompensasViewController.m */,
+				6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */,
+				6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		6DE8252819366304000EDC72 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +173,9 @@
 		6DE8253A19366304000EDC72 /* Game_of_Life */ = {
 			isa = PBXGroup;
 			children = (
+				6DAD1006193FA0BC00828CF3 /* Controller */,
+				6DAD1005193FA0A100828CF3 /* View */,
+				6DAD1004193FA08D00828CF3 /* Model */,
 				6DE8254319366304000EDC72 /* AppDelegate.h */,
 				6DE8254419366304000EDC72 /* AppDelegate.m */,
 				6DE8254619366304000EDC72 /* Images.xcassets */,
@@ -153,21 +188,10 @@
 		6DE8253B19366304000EDC72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DB5B219193CE78F0028AE8B /* PerfilViewController.h */,
-				6DB5B21A193CE78F0028AE8B /* PerfilViewController.m */,
-				6DB5B21B193CE78F0028AE8B /* PerfilViewController.xib */,
 				6DE8253C19366304000EDC72 /* Game_of_Life-Info.plist */,
 				6DE8253D19366304000EDC72 /* InfoPlist.strings */,
 				6DE8254019366304000EDC72 /* main.m */,
 				6DE8254219366304000EDC72 /* Game_of_Life-Prefix.pch */,
-				6DB5B21E193CECB30028AE8B /* AtividadesViewController.h */,
-				6DB5B21F193CECB30028AE8B /* AtividadesViewController.m */,
-				6DB5B220193CECB30028AE8B /* AtividadesViewController.xib */,
-				6DB5B223193CEDEA0028AE8B /* RecompensasViewController.h */,
-				6DB5B224193CEDEA0028AE8B /* RecompensasViewController.m */,
-				6DB5B225193CEDEA0028AE8B /* RecompensasViewController.xib */,
-				6DB5B228193CF6FD0028AE8B /* Perfil.h */,
-				6DB5B229193CF6FD0028AE8B /* Perfil.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
