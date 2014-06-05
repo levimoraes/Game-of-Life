@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AtividadesViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *atividade1;
+@property (weak, nonatomic) IBOutlet UIButton *atividade2;
+@property (weak, nonatomic) IBOutlet UIButton *atividade3;
 
 @end

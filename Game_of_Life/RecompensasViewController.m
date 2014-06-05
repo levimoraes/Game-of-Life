@@ -10,6 +10,7 @@
 #import "PerfilViewController.h"
 #import "AtividadesViewController.h"
 
+
 @interface RecompensasViewController ()
 
 @end
@@ -38,16 +39,15 @@
                        animated:YES
                      completion:nil];
 }
-NSMutableArray *data = [[NSMutableArray alloc] init];
-//__unused NSDate* todayData = [[NSDate alloc] init];
-[data addObject: @"Levi"];
-[data addObject: @"30"];
-[data addObject:_dinheiro.text];
-[data addObject:_level.text];
+-(NSString*)saveFilePath
+{
+    NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSLog(@"%@",path);
+    return [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
+}
 
-[data writeToFile:[self saveFilePath] atomically:YES];
-NSLog(@"Salvo no plist\n%@",data);
-NSLog(@"Salvo no plist\n%@",[data objectAtIndex:0]);
+
+
 
 
 - (void)viewDidLoad
@@ -59,6 +59,20 @@ NSLog(@"Salvo no plist\n%@",[data objectAtIndex:0]);
     //  NSLog(@"Plist = %@",verificarDados);
     // NSLog(@"ENDERECO = %@", path);
     // Do any additional setup after loading the view from its nib.
+
+    NSMutableArray *data = [[NSMutableArray alloc] init];
+    ////__unused NSDate* todayData = [[NSDate alloc] init];
+    [data addObject: @"Levi"];
+    [data addObject: @"30"];
+    [data insertObject:@"Fulano" atIndex:2];
+    
+    
+    [data writeToFile:[self saveFilePath] atomically:YES];
+    NSLog(@"Salvo no plist\n%@",data);
+    NSLog(@"Salvo no plist\n%@",[data objectAtIndex:0]);
+
+
+
 }
 
 - (void)didReceiveMemoryWarning

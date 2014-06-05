@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RecompensasViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *recompensa1;
+@property (weak, nonatomic) IBOutlet UIButton *recompensa2;
+@property (weak, nonatomic) IBOutlet UIButton *recompensa3;
+@property (weak, nonatomic) IBOutlet UILabel *dinheiroDisponivel;
 
 @end
