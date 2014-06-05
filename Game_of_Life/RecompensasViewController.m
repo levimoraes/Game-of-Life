@@ -9,7 +9,7 @@
 #import "RecompensasViewController.h"
 #import "PerfilViewController.h"
 #import "AtividadesViewController.h"
-
+#import "Perfil.h"
 
 @interface RecompensasViewController ()
 
@@ -47,12 +47,89 @@
 }
 
 
+- (IBAction)recompensa1:(id)sender {
+    
+    Perfil *pessoa1 = [[Perfil alloc]init];
+    pessoa1.dinheiro = 100;
+    NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+    _dinheiroDisponivel.text = dinheiro;
+    
+    if(pessoa1.dinheiro >= 45){
+        
+        pessoa1.dinheiro = (pessoa1.dinheiro - 45);
+        NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+        _dinheiroDisponivel.text = dinheiro;
+        
+        }else{
+         UIAlertView *alert = [[UIAlertView alloc]
+         initWithTitle: @"Erro"
+         message: @"Seu dinheiro não é suficiente para comprar esta recompensa!"
+         delegate: nil
+         cancelButtonTitle:@"OK"
+        otherButtonTitles:nil];
+        [alert show];
+        }
+}
+
+- (IBAction)recompensa2:(id)sender {
+    
+    Perfil *pessoa1 = [[Perfil alloc]init];
+    pessoa1.dinheiro = 100;
+    NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+    _dinheiroDisponivel.text = dinheiro;
+    
+    if(pessoa1.dinheiro >= 45){
+        
+        pessoa1.dinheiro = (pessoa1.dinheiro - 45);
+        NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+        _dinheiroDisponivel.text = dinheiro;
+        
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Erro"
+                              message: @"Seu dinheiro não é suficiente para comprar esta recompensa!"
+                              delegate: nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+        [alert show];
+    }
+
+}
 
 
+- (IBAction)recompensa3:(id)sender {
+    
+    Perfil *pessoa1 = [[Perfil alloc]init];
+    pessoa1.dinheiro = 100;
+    NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+    _dinheiroDisponivel.text = dinheiro;
+    
+    if(pessoa1.dinheiro >= 45){
+        
+        pessoa1.dinheiro = (pessoa1.dinheiro - 45);
+        NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+        _dinheiroDisponivel.text = dinheiro;
+        
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Erro"
+                              message: @"Seu dinheiro não é suficiente para comprar esta recompensa!"
+                              delegate: nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+        [alert show];
+    }
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    Perfil *pessoa1 = [[Perfil alloc]init];
+    pessoa1.dinheiro = 100;
+    NSString *dinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+    _dinheiroDisponivel.text = dinheiro;
+    
     NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *historico = [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
     NSMutableArray *verificarDados = [[NSMutableArray alloc] initWithContentsOfFile: historico];
@@ -78,6 +155,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    
+    
     // Dispose of any resources that can be recreated.
 }
 
