@@ -38,10 +38,26 @@
                        animated:YES
                      completion:nil];
 }
+NSMutableArray *data = [[NSMutableArray alloc] init];
+//__unused NSDate* todayData = [[NSDate alloc] init];
+[data addObject: @"Levi"];
+[data addObject: @"30"];
+[data addObject:_dinheiro.text];
+[data addObject:_level.text];
+
+[data writeToFile:[self saveFilePath] atomically:YES];
+NSLog(@"Salvo no plist\n%@",data);
+NSLog(@"Salvo no plist\n%@",[data objectAtIndex:0]);
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *historico = [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
+    NSMutableArray *verificarDados = [[NSMutableArray alloc] initWithContentsOfFile: historico];
+    //  NSLog(@"Plist = %@",verificarDados);
+    // NSLog(@"ENDERECO = %@", path);
     // Do any additional setup after loading the view from its nib.
 }
 
