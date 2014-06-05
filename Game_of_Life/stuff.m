@@ -10,10 +10,11 @@
 
 @implementation stuff
 
--(void)getStuff {
 
-    NSString *path [[[NSBundle mainBundle] pathForResource:@"historico" ofType:@"plist"];
-
+- (void) getStuff{
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"historico" ofType:@"plist"];
+    
+    self.stuff = [[NSMutableArray alloc]initWithContentsOfFile:path];
 }
 
 @end

@@ -18,6 +18,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *botaoSalvarFoto;
 @property (weak, nonatomic) IBOutlet UIButton *mudarNick;
 @property (nonatomic) UIImagePickerController *pegarFoto;
+@property (nonatomic,strong) NSMutableArray *items;
+-(NSString *) dataFilePath;
+-(void) readPlist;
+-(void) writePlist;
+
 
 
 //@property (nonatomic) IBOutlet int dinheiro;
