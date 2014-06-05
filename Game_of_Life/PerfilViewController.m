@@ -11,7 +11,6 @@
 #import "RecompensasViewController.h"
 #import "Perfil.h"
 
-
 @interface PerfilViewController ()
 
 @end
@@ -26,6 +25,14 @@
     }
     return self;
 }
+- (void)subirLevel{
+    int xp = 20;
+    
+    NSLog(@"%d",xp);
+
+
+}
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
     _fotoPerfil.image = img;
     
@@ -82,6 +89,7 @@
         if (buttonIndex == 1) {
             UITextField *textfield = [alertView textFieldAtIndex:0];
             NSLog(@"username: %@", textfield.text);
+            //NSString *nomeUser = @"Levianor";
             _nome.text = textfield.text;
         }
     }
@@ -104,7 +112,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
+   // subirLevel();
     
     
     _pegarFoto = [[UIImagePickerController alloc]init];
@@ -114,11 +122,12 @@
     
     
     
-    //
-    NSString *historico = [[NSBundle mainBundle] pathForResource:@"historico" ofType:@"plist"];
-    NSMutableArray *verificarDados = [[NSMutableArray alloc] initWithContentsOfFile: historico];
-    NSLog(@"Plist = %@",verificarDados);
-    //
+    NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *historico = [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
+        NSMutableArray *verificarDados = [[NSMutableArray alloc] initWithContentsOfFile: historico];
+        NSLog(@"Plist = %@",verificarDados);
+        NSLog(@"ENDERECO = %@", path);
+    
     
     if(verificarDados == nil){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Escolha seu Nick" message:@"" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
@@ -129,24 +138,39 @@
         [alert addButtonWithTitle:@"Aceitar"];
         [alert show];
         
+        //Iniciando Pessoa
         Perfil *pessoa1 = [[Perfil alloc]init];
-        pessoa1.nome = @"";
+        //pessoa1.nome = @"";
         pessoa1.dinheiro = 50;
-        NSString *stringDinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
-        pessoa1.xp = 10;
-        //NSString *stringXP = [NSString stringWithFormat:@"%d",pessoa1.xp];
+        pessoa1.xp = 00;
         pessoa1.level = 1;
+        
+        
         NSString *stringlevel = [NSString stringWithFormat:@"%d",pessoa1.level];
-        
-        
-        pessoa1.xp+=30;
         NSString *stringXP = [NSString stringWithFormat:@"%d",pessoa1.xp];
-        
+        NSString *stringDinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
         _dinheiro.text = stringDinheiro;
         _xp.text = stringXP ;
         _level.text = stringlevel;
-    }else{
         
+    }else{
+        //Iniciando Pessoa
+        Perfil *pessoa1 = [[Perfil alloc]init];
+        //pessoa1.nome = @"";
+        pessoa1.dinheiro = 50;
+        pessoa1.xp = 00;
+        pessoa1.level = 1;
+        
+        pessoa1.dinheiro +=300;
+        
+        
+        NSString *stringlevel = [NSString stringWithFormat:@"%d",pessoa1.level];
+        NSString *stringXP = [NSString stringWithFormat:@"%d",pessoa1.xp];
+        NSString *stringDinheiro = [NSString stringWithFormat:@"%d",pessoa1.dinheiro];
+       // _nome.text = nomeUser;
+        _dinheiro.text = stringDinheiro;
+        _xp.text = stringXP ;
+        _level.text = stringlevel;
     
     }
 
